@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>pt.fjrcorreia.playground</groupId>
+        <artifactId>playground-rest</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>wildfly-rest</artifactId>
+    <packaging>war</packaging>
+
+
+    <name>wildfly-rest Maven Webapp</name>
+
+    <description>Playground project representing REST With Spring HATEOAS</description>
+
+
+
+    <dependencies>
+
+        <!-- TESTING -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+
+
+
+    <build>
+        <finalName>wildfly-rest</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>1.2.0.Alpha6</version>
+                <!-- Plugin Configuration:
+                 | https://docs.jboss.org/wildfly/plugins/maven/latest/index.html
+                -->
+                <configuration>
+                    <java-opts>
+                        <java-opt>-agentlib:jdwp=transport=dt_socket,address=8787,server=y,suspend=n</java-opt>
+                    </java-opts>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+</project>
