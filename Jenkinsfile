@@ -18,9 +18,9 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building...'
                 sh '''
-                    java -version
+                    ${JAVA_HOME}/bin/java -version
                     mvn clean package
                 '''
             }
