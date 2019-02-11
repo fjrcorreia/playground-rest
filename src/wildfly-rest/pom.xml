@@ -13,9 +13,9 @@
     <packaging>war</packaging>
 
 
-    <name>wildfly-rest Maven Webapp</name>
+    <name>Playground :: Wildfly JAXRS</name>
 
-    <description>Playground project representing REST With Spring HATEOAS</description>
+    <description>Rest Playground project using Wildfly and JAX-RS</description>
 
 
 
@@ -41,7 +41,7 @@
             <plugin>
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
-                <version>1.2.0.Alpha6</version>
+                <version>1.2.1.Final</version>
                 <!-- Plugin Configuration:
                  | https://docs.jboss.org/wildfly/plugins/maven/latest/index.html
                 -->

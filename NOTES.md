@@ -44,3 +44,14 @@ vnd.<subtype>+type
 
 ### Pointers
  - https://docs.spring.io/spring-data/rest/docs/current/reference/html/#_the_hal_browser
+
+
+
+### Presentation
+ - [Building Beautiful REST APIs with ASP.NET Core](https://www.slideshare.net/stormpath/building-beautiful-rest-apis-with-aspnet-core?next_slideshow=1)
+
+## Spring
+ - [Jackson – Bidirectional Relationships](http://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion)
+ - [Securing Spring Boot with JWTs](https://auth0.com/blog/securing-spring-boot-with-jwts/)
+ - [Implementing JWT Authentication on Spring Boot APIs](https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/)
+ - [GitHub :: springboot-jwt](https://github.com/nydiarra/springboot-jwt)
