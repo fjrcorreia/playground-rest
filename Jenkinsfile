@@ -19,7 +19,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'mvn clean package'
+                sh '''
+                    java -version
+                    mvn clean package
+                '''
             }
         }
         stage('Test') {
