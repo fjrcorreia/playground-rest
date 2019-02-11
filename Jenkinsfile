@@ -20,8 +20,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh '''
-                    ls ${JAVA_HOME}
-                    ls -la ${JAVA_HOME}/bin
+                    ls -la ${JAVA_HOME}/bin/java
                     ${JAVA_HOME}/bin/java -version
                     mvn clean package
                 '''
