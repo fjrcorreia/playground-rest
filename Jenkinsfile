@@ -32,7 +32,7 @@ pipeline {
             }
             post {
                 success {
-                    junit 'target/surefire-reports/**/*.xml'
+                    junit 'src/wildfly-rest/target/surefire-reports/**/*.xml'
                 }
             }
         }
